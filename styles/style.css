@@ -1,1 +1,315 @@
 /* место для вашего кода */
+
+.header {
+  display: flex;
+  margin: 96px 26px;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: left;
+  text-transform: lowercase;
+  flex: 3;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  padding: 36px;
+}
+
+.logo img {
+  width: 148px;
+}
+
+.contacts {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  flex: 3;
+}
+
+.contacts a {
+  width: 240px;
+  height: 24px;
+  font-size: 18px;
+  text-decoration: none;
+  top: 29px;
+  left: 786px;
+}
+
+li {
+  list-style-type: circle;
+  text-decoration: underline;
+}
+
+.logo-black {
+  width: 100px;
+}
+
+.cover {
+  width: 1100px;
+  height: 757px;
+  position: absolute;
+}
+
+.cover img {
+  width: 100%;
+  height: 100%;
+}
+
+.hidden {
+  width: 1100px;
+  height: 757px;
+  background-color: black;
+  position: absolute;
+  z-index: 0;
+  opacity: 50%;
+}
+
+.content {
+  width: 100%;
+  height: 757px;
+  padding: 0 50px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 146px;
+}
+
+.jambotron {
+  width: 100%;
+  height: 355px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 6;
+  color: white;
+}
+
+.title {
+  text-transform: uppercase;
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 115px;
+  letter-spacing: 0.3em;
+}
+
+.title-letter-spacing {
+  letter-spacing: 0.6em;
+}
+
+.title-start {
+  text-align: left;
+}
+
+.title-center {
+  text-align: center;
+}
+
+.title-end {
+  text-align: right;
+}
+
+.subline {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  margin-bottom: 50px;
+}
+
+.subline-text {
+  display: flex;
+  justify-content: center;
+  flex: 3;
+
+  text-transform: uppercase;
+  word-spacing: 1rem;
+  align-items: center;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
+}
+
+.subline-button {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  flex: 1;
+}
+
+.subline-button button {
+  width: 256px;
+  height: 51px;
+  background: none;
+  color: white;
+  border: 1px solid white;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
+.lots-content {
+  width: 334px;
+  height: 563px;
+}
+
+.lot {
+  width: 334px;
+  height: 563px;
+  position: absolute;
+  z-index: 0;
+}
+
+.lot-cover {
+  width: 334px;
+  height: 563px;
+  background-color: black;
+  position: absolute;
+  z-index: 0;
+  opacity: 50%;
+}
+
+.lot img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.lots-text {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 51px 40px;
+  box-sizing: border-box;
+  z-index: 1;
+  position: relative;
+  color: white;
+  font-size: 20px;
+}
+
+.lots-text h3 {
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
+.lots-title {
+  font-size: 40px;
+  margin: 40px 27px;
+}
+
+.lots {
+  padding: 0 24px;
+  width: 100%;
+  margin-bottom: 146px;
+}
+
+.lots-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.more {
+  padding: 24px;
+  font-size: 20px;
+}
+
+.about {
+  width: 100%;
+  height: 595px;
+  display: flex;
+  padding: 0 24px;
+  margin-bottom: 180px;
+}
+
+.logo-column {
+  flex: 1;
+}
+
+.about-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  flex: 2;
+}
+
+.about-column p {
+  font-size: 20px;
+  margin-bottom: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+
+.about-column h2 {
+  margin-bottom: 100px;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.logo-white {
+  width: 240px;
+  height: 240px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-white img {
+  width: 148px;
+  height: 114px;
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  padding: 0 50px;
+  margin-bottom: 88px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.13px;
+}
+
+.footer-menu {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  flex: 1;
+}
+
+.footer-contacts {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+}
+
+.footer-contacts a {
+  width: 240px;
+  height: 24px;
+  font-size: 18px;
+  text-decoration: none;
+  top: 29px;
+  left: 786px;
+  flex: 1;
+}
+
+.socials {
+  display: flex;
+  gap: 48px;
+}
+
+.socials img {
+  width: 48px;
+  height: 48px;
+}
