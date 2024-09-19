@@ -178,6 +178,9 @@ address {
 .lots__heading {
   font-size: 40px;
   margin: 40px 27px;
+  font-weight: 700;
+  line-height: 46.96px;
+  text-align: left;
 }
 
 .card__text {
