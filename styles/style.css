@@ -13,11 +13,11 @@
   align-items: center;
 }
 
-.header__links-list-item {
+.links-list-item {
   text-underline-offset: 4px;
 }
 
-.header__links-list-item_active {
+.links-list-item_active {
   text-decoration: none;
 }
 
@@ -47,10 +47,6 @@
   font-size: 18px;
   line-height: 24.5px;
   gap: 2px;
-}
-
-.address a {
-  text-underline-offset: 4px;
 }
 
 .address address {
@@ -209,11 +205,6 @@
   font-size: 20px;
   display: block;
   line-height: 24px;
-  text-decoration: none;
-}
-
-.lots__look-more-link span {
-  border-bottom: 1px solid black;
 }
 
 .about {
@@ -270,7 +261,6 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  text-underline-offset: 4px;
 }
 
 .footer__menu-link_active {
