@@ -13,15 +13,17 @@
   <body>
     <header class="header" id="header">
       <nav class="header__menu">
-        <a href="#header" class="links-list-item_active">главная</a>
-        <div class="header__divider"></div>
-        <a href="#lots" class="links-list-item">
-          <span>посмотреть лоты</span>
-        </a>
-        <div class="header__divider"></div>
-        <a href="#about" class="links-list-item">
-          <span>об аукционе</span>
-        </a>
+        <ul class="links-list">
+          <li class="links-list-item_active links-list-item_no-bullit">
+            <a href="#header">главная</a>
+          </li>
+          <li class="links-list-item">
+            <a href="#lots"> посмотреть лоты </a>
+          </li>
+          <li class="links-list-item">
+            <a href="#about"> об аукционе </a>
+          </li>
+        </ul>
       </nav>
 
       <a class="header__logo" href="#header"
@@ -31,43 +33,38 @@
           class="header__logo-image"
       /></a>
 
-      <div class="header__address">
-        <div class="address">
-          <a href="tel:+99995555555" class="links-list-item">+9 999 555 5555</a>
-          <a href="mailto:info@sobaka.ge" class="links-list-item"
-            >info@sobaka.ge</a
-          >
-          <address>наб. Принсенграхт 263- 265, Амстердам</address>
-        </div>
-      </div>
+      <address class="header__address address">
+        <a href="tel:+99995555555" class="links-list-item">+9 999 555 5555</a>
+        <a href="mailto:info@sobaka.ge" class="links-list-item"
+          >info@sobaka.ge</a
+        >
+        <p>наб. Принсенграхт 263- 265, Амстердам</p>
+      </address>
     </header>
     <main>
       <section class="section">
         <div class="cover">
-          <img src="./images/cover.jpg" alt="cover" class="cover-image" />
           <div class="overlay"></div>
           <div class="cover__container">
-            <div class="cover__container__title">
-              <h1 class="cover__title">
-                <span class="aligned-text"
-                  >о<span class="letter-spacing-extended">но</span></span
-                >
-                <span class="aligned-text_center"
-                  >те<span class="letter-spacing-extended">бе</span></span
-                >
-                <span class="aligned-text_right"
-                  ><span class="letter-spacing-extended">Н</span>ад<span
-                    class="letter-spacing-extended-o"
-                    >о</span
-                  ></span
-                >
-              </h1>
-            </div>
+            <h1 class="cover__container__title cover__title">
+              <span class="aligned-text"
+                >о<span class="letter-spacing-extended">но</span></span
+              >
+              <span class="aligned-text_center"
+                >те<span class="letter-spacing-extended">бе</span></span
+              >
+              <span class="aligned-text_right"
+                ><span class="letter-spacing-extended">Н</span>ад<span
+                  class="letter-spacing-none"
+                  >о</span
+                ></span
+              >
+            </h1>
 
             <div class="cover__description">
-              <span class="cover__description-text">
-                Аукцион вещей, в которые никто не верил</span
-              >
+              <h3 class="cover__description-text">
+                Аукцион вещей, в которые никто не верил
+              </h3>
               <button class="bet-button">Сделать ставку</button>
             </div>
           </div>
@@ -77,15 +74,10 @@
         <div class="lots" id="lots">
           <h2 class="lots__heading">лоты</h2>
 
-          <div class="lots__card-list">
-            <div class="lots__card-list-item">
+          <ul class="lots__card-list links-list-item_no-bullit">
+            <li class="lots__card-list-item">
               <a href="https://www.ya.ru"
-                ><div class="card">
-                  <img
-                    src="./images/card-lot-01.jpg"
-                    alt="lot"
-                    class="cover-image"
-                  />
+                ><div class="card card_type_film">
                   <div class="overlay"></div>
 
                   <div class="card__text">
@@ -100,16 +92,11 @@
                   </div>
                 </div></a
               >
-            </div>
+            </li>
 
-            <div class="lots__card-list-item">
+            <li class="lots__card-list-item">
               <a href="https://www.ya.ru"
-                ><div class="card">
-                  <img
-                    src="./images/card-lot-02.jpg"
-                    alt="lot"
-                    class="cover-image"
-                  />
+                ><div class="card card_type_book">
                   <div class="overlay"></div>
 
                   <div class="card__text">
@@ -128,16 +115,11 @@
                   </div>
                 </div></a
               >
-            </div>
+            </li>
 
-            <div class="lots__card-list-item">
+            <li class="lots__card-list-item">
               <a href="https://www.ya.ru"
-                ><div class="card">
-                  <img
-                    src="./images/card-lot-03.jpg"
-                    alt="lot"
-                    class="cover-image"
-                  />
+                ><div class="card card_type_picture">
                   <div class="overlay"></div>
 
                   <div class="card__text">
@@ -155,14 +137,14 @@
                   </div>
                 </div></a
               >
-            </div>
-          </div>
+            </li>
+          </ul>
 
           <a
             href="https://www.ya.ru"
             class="lots__look-more-link links-list-item"
           >
-            <span> посмотреть больше </span>
+            посмотреть больше
           </a>
         </div>
       </section>
@@ -184,8 +166,7 @@
               эти странные вещи, созданные любителями?
             </p>
 
-            <br />
-            <p class="about__text">
+            <p>
               Слишком сложные или, наоборот, слишком простые. Опережающие своё
               время. В пух и прах растерзанные критиками. Непринятые и
               непонятые. Когда-то они казались просто неудачными. Но, несмотря
@@ -199,36 +180,46 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="address">
+      <address class="address">
         <a href="tel:+99995555555" class="links-list-item">+9 999 555 5555</a>
         <a href="mailto:info@sobaka.ge" class="links-list-item"
           >info@sobaka.ge</a
         >
-        <address>наб. Принсенграхт 263- 265, Амстердам</address>
-      </div>
+        <p>наб. Принсенграхт 263- 265, Амстердам</p>
+      </address>
       <nav class="footer__menu">
-        <a href="#header" class="links-list-item_active">главная</a>
-        <a href="#lots" class="links-list-item">
-          <span>посмотреть лоты</span>
-        </a>
-        <a href="#about" class="links-list-item">
-          <span>об аукционе</span>
-        </a>
+        <ul>
+          <li class="links-list-item_active links-list-item_no-bullit">
+            <a href="#header">главная</a>
+          </li>
+          <li class="links-list-item links-list-item_no-bullit">
+            <a href="#lots">посмотреть лоты</a>
+          </li>
+          <li class="links-list-item links-list-item_no-bullit">
+            <a href="#about">об аукционе</a>
+          </li>
+        </ul>
       </nav>
-      <div class="footer__social-list">
-        <a href="https://www.ya.ru"
-          ><img src="./images/yt.svg" alt="yt" class="footer__social-icon"
-        /></a>
-        <a href="https://www.ya.ru"
-          ><img src="./images/vk.svg" alt="vk" class="footer__social-icon"
-        /></a>
-        <a href="https://www.ya.ru"
-          ><img
-            src="./images/pinterest.svg"
-            alt="pinterest"
-            class="footer__social-icon"
-        /></a>
-      </div>
+      <ul class="footer__social-list">
+        <li class="links-list-item_no-bullit">
+          <a href="https://www.ya.ru"
+            ><img src="./images/yt.svg" alt="yt" class="footer__social-icon"
+          /></a>
+        </li>
+        <li class="links-list-item_no-bullit">
+          <a href="https://www.ya.ru"
+            ><img src="./images/vk.svg" alt="vk" class="footer__social-icon"
+          /></a>
+        </li>
+        <li class="links-list-item_no-bullit">
+          <a href="https://www.ya.ru"
+            ><img
+              src="./images/pinterest.svg"
+              alt="pinterest"
+              class="footer__social-icon"
+          /></a>
+        </li>
+      </ul>
     </footer>
   </body>
 </html>
